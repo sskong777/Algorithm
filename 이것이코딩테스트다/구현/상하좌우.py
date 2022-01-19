@@ -19,3 +19,6 @@ for i in plan:
     x, y = nx, ny
 
 print(x,y)
+
+# 0120
+s
