@@ -11,5 +11,6 @@ for i in range(len(res)):
 for i in range(len(res)):
     if res[i] == max:
         max_in = i+1
+        
 print(max)
 print(max_in)
