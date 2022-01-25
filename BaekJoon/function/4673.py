@@ -13,13 +13,33 @@
 # 10000보다 작거나 같은 셀프 넘버를 한 줄에 하나씩 출력하는 프로그램을 작성하시오.
 
 
-def selfnum():
-    dn_list = []
-    for i in range(1,10):
-        dn = i
-        for j in str(i):
-           dn += int(j) 
-        dn_list.append(dn)
-    return dn_list
+# def selfnum():
+#     dn_list = []
+#     for i in range(1,10):
+#         dn = i
+#         for j in str(i):
+#            dn += int(j) 
+#         dn_list.append(dn)
+#     return dn_list
 
-print(selfnum())
+# print(selfnum())
+def solve():
+    def dn(num):
+        dn = num
+        for i in str(num):
+            dn += int(i)
+        return dn
+
+    dn_list = []
+    for i in range(1,10001):
+        dn_list.append(dn(i))
+
+    sort_dn = sorted(dn_list)
+
+    ans = []
+    for i in range(1,10001):
+        if i not in sort_dn:
+            ans.append(i)
+    for i in ans:
+        print(i)
+solve()
