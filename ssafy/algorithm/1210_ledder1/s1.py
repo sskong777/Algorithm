@@ -33,7 +33,7 @@ for _ in range(1, 11):
                 # 현재 위치로부터 왼쪽/오른쪽/위쪽에 길이 있다면 (가야 할 곳으로 미리 탐색)
                 if matrix[next_r][next_c]:
                     # 현재 위치는 0으로 만들고(그래야 다음 탐색에서 1을 보고 가지 않음)
-                    # matrix[row][col] = 0
+                    matrix[row][col] = 0
                     # 현재 위치 갱신 -> 움직여야 할 곳으로 이동
                     row = next_r
                     col = next_c

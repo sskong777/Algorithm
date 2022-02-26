@@ -9,3 +9,4 @@ for i in range(1 << n):
             sub_set.append(arr[j])
     sub_set_arr.append(sub_set)
 print(sub_set_arr)
+print(len(sub_set_arr))

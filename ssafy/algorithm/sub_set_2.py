@@ -5,7 +5,6 @@ def f(i, N):
         for j in range(N):
             if bit[j]:
                 s += a[j]
-
         return
     else:
         bit[i] = 1
