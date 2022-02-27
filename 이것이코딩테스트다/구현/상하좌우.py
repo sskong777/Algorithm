@@ -21,4 +21,3 @@ for i in plan:
 print(x,y)
 
 # 0120
-s
