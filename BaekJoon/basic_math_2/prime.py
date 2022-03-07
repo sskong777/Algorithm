@@ -1,6 +1,7 @@
 # n까지 소수의 갯수 구하기
 # 에라스토테네스의 체
 def isPrime(n):
+    global sieve
     sieve = [True] * n
 
     m = int(n ** 0.5)
@@ -11,7 +12,9 @@ def isPrime(n):
 
     return [i for i in range(2,n) if sieve[i] == True]  # sieve리스트에서 True(소수)인 i값만 리스트에 담아서 반환
 
-
+sieve = []
 n = int(input())
 p = isPrime(n)
 print(p)
+print(sieve)
+
