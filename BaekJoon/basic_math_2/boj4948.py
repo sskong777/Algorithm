@@ -7,6 +7,7 @@ def prime_count(n):
         if sieve[i] == True:
             for j in range(i+i,end,i):
                 sieve[j] = False
+
     prime_list = [i for i in range(n+1,end) if sieve[i] == True]
     return len(prime_list)
 #

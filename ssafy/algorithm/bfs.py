@@ -1,5 +1,5 @@
-import sys
-sys.stdin = open('input.txt', 'r')
+# # 5106 미로의 거리
+
 
 def fstart(N):
     for i in range(N):

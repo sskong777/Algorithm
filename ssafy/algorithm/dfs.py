@@ -1,5 +1,7 @@
-import sys
-sys.stdin = open('input.txt', 'r')
+# 5106 미로의 거리
+
+# import sys
+# sys.stdin = open('input.txt', 'r')
 
 def fstart(N):
     for i in range(N):
@@ -13,6 +15,9 @@ def dfs(i,j,N,c):       # c: 지나온 칸 수
     if maze[i][j] == 3:
         if minV > c:
             minV = c
+    # 백트래킹 추가.
+    elif c > minV:
+        return
     else:
         maze[i][j] = 1  # 출발지 막기
         for di, dj in [[0,1], [1,0], [0,-1], [-1,0]]:    # i,j에 인접한 칸에 대해
