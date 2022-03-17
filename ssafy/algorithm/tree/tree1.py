@@ -40,6 +40,8 @@ par = [0] *(V+1)
 for i in range(E):
     p,c = arr[i*2],arr[i*2+1]
     par[c] = p
+
+
 # 루트 찾기에 사용.
 root = 0
 for i in range(1,V+1):
