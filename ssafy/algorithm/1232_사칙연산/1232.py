@@ -17,8 +17,11 @@ def postorder(node):
         return tree[node][1]
     else:
         l = postorder(tree[node][2])
+        # print('l',l)
         r = postorder(tree[node][3])
+        # print('r',r)
         res = calc(tree[node][1], l, r)
+        # print('res',res)
         return res
 
 # 숫자만 형변환
@@ -35,6 +38,5 @@ for tc in range(1, 11):
     tree = [0]            # 앞에는 비워두고 인덱스 1부터 시작
     for _ in range(N):
         tree.append(list(map(chg_number, input().split())))
-
     res = postorder(1)
     print(f'#{tc} {res}')
