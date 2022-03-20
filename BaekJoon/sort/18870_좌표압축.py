@@ -1,6 +1,7 @@
-N = int(input())
-arr = list(map(int,input().split()))
-ans = []
+import sys
+N = int(sys.stdin.readline())
+arr = list(map(int,sys.stdin.readline().split()))
+ans = [0] * N
 
 
 for i in range(N):
@@ -12,6 +13,5 @@ for i in range(N):
         if arr[i]>arr[j]:
             count += 1
             num.append(arr[j])
-
-    ans.append(count)
+    ans[i] = count
 print(*ans)

@@ -14,4 +14,6 @@ for i in range(N):
           # print(arr[j][0])
             if arr[i][0] < arr[j][0] and arr[i][1] < arr[j][1]:
                 rank[i] += 1
+
 print(' '.join(map(str,rank)))
+# print(*rank)

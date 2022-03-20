@@ -12,7 +12,7 @@ for i in range(N):
 # pprint(arr)
 
 count = []
-for i in range(N-7):
+for i in range(N-8+1):
     for j in range(M-7):
         w_count = 0     # w가 먼저 시작하는 경우
         b_count = 0     # b가 먼저 시작하는 경우

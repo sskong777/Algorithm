@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0605a0b-c3ea-4927-a521-f09b34393495" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../ssafy/algorithm/tree/tree1.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../ssafy/algorithm/tree/tree1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BaekJoon/sort/18870_좌표압축.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../BaekJoon/sort/18870_좌표압축.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BaekJoon/sort/18870_좌표압축2.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../BaekJoon/sort/18870_좌표압축2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
