@@ -16,7 +16,7 @@ for i in range(M):
     A ,B = map(int,input().split())
     # adj[A][B] = 1
     graph[A].append(B)
-
+# print(graph)
 q = deque()
 sol = []
 q.append(X)

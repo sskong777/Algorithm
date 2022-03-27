@@ -12,6 +12,7 @@ def solution(N, stages):
 N = int(input())
 stages = list(map(int,input().split()))
 sort_stages = sorted(stages)
+
 dict =  {}
 for i in range(1,N+1):
     # clear : 스테이지에 도달한 플레이어 수
@@ -23,7 +24,10 @@ for i in range(1,N+1):
         if i == j:
             not_clear += 1
     dict[i] = not_clear/clear
+
 sort_dict = sorted(dict.items(), key=lambda x : x[1], reverse=True)
+print(sort_dict)
+
 res = []
 for i in sort_dict:
     res.append(i[0])

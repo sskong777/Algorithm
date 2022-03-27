@@ -33,6 +33,7 @@ for i in range(N):
         if arr[i][j]:
             data.append((arr[i][j],i,j))
 
+# 바이러스 번호를 기준으로 오름차순 정렬
 data.sort()
 
 
