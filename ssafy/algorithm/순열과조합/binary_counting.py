@@ -2,6 +2,7 @@ def perm(k):
     global data
     if k == R:
         print(t)
+        data.append(t.copy())
     else:
         for i in range(N):
             if visited[i]:

@@ -8,4 +8,4 @@ for i in range(1<<N):    # 부분집합의 갯수
         if i & (1<<j):  #i의j번째 비트가 1이면 j번째 원소 출력
             a.append(arr[j])
     data.append(a)
-# print(data)
+print(data)
