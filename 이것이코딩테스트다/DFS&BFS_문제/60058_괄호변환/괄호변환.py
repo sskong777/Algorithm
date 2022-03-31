@@ -16,7 +16,8 @@ def is_vaild(arr):
     else:
         return stack
 
-
+def seperate(arr):
+    pass
 p = list(input())
 # print(p)
 if is_vaild(p) is True:

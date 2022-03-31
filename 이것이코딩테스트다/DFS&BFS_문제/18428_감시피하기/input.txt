@@ -1,0 +1,32 @@
+4
+S S S T
+X X X X
+X X X X
+T T T X
+5
+X S X X T
+T X S X X
+X X X X X
+X T X X X
+X X T X X
+
+5
+X X S X X
+X X X X X
+S X T X S
+X X X X X
+X X S X X
+
+
+5
+X S X O T
+T O S X X
+X X O X X
+X T X X X
+X X T X X
+
+
+
+
+
+
