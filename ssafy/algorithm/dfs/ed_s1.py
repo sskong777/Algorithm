@@ -1,6 +1,7 @@
 import sys
 sys.stdin = open('input.txt', 'r')
 
+# 7,8
 nc, ec = map(int, input().split())  # 노드의 개수, 간선의 개수
 edges = list(map(int, input().split()))
 

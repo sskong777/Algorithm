@@ -6,6 +6,8 @@ oper = list(map(int,input().split()))
 mmax = -1000000000
 mmin = 1000000000
 oper_lst = []
+
+# 연산자 리스트로 넣어주기.
 for i in range(len(oper)):
     if i == 0:
         for j in range(oper[i]):
@@ -21,6 +23,7 @@ for i in range(len(oper)):
             oper_lst.append("%")
 oper_com = permutations(oper_lst,len(oper_lst))
 
+# 순열로 나올 수 있는 경우를 다 계산
 for i in oper_com:
     ssum = num[0]
 
