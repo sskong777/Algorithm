@@ -21,6 +21,7 @@ for i in range(len(oper)):
     elif i == 3:
         for j in range(oper[i]):
             oper_lst.append("%")
+
 oper_com = permutations(oper_lst,len(oper_lst))
 
 # 순열로 나올 수 있는 경우를 다 계산
@@ -37,9 +38,11 @@ for i in oper_com:
         if i[j - 1] == '%':
             ssum = int(ssum/num[j])
     # print(ssum)
+
     if ssum > mmax:
         mmax = ssum
     if ssum < mmin:
         mmin = ssum
+
 print(mmax)
 print(mmin)
