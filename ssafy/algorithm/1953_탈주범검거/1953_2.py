@@ -1,3 +1,5 @@
+# 파이써닉한 코드
+
 import sys
 from collections import deque
 sys.stdin = open('input.txt', 'r')
@@ -18,7 +20,7 @@ def bfs(N,M,si,sj,L):
         for k in range(4):
             ni,nj = ci+di[k], cj+dj[k]
             if 0<=ni<N and 0<= nj <M and v[ni][nj] == 0 and\
-                pipe[arr[ci][cj]][k] and pipe[arr[ni][nj]][opp[k]]:
+                k in pipe[arr[ci][cj]] and opp[k] in pipe[arr[ni][nj]]:
                 q.append((ni,nj))
                 v[ni][nj] = v[ci][cj] + 1
                 cnt += 1
@@ -27,14 +29,14 @@ def bfs(N,M,si,sj,L):
 
 pipe = [
    #상 하 좌 우
-    [0,0,0,0],
-    [1,1,1,1],  # 1번 파이프
-    [1,1,0,0],
-    [0,0,1,1],
-    [1,0,0,1],
-    [0,1,0,1],
-    [0,1,1,0],
-    [1,0,1,0],  # 7번 파이프
+    [],
+    [0,1,2,3],
+    [0,1],
+    [2,3],
+    [0,3],
+    [1,3],
+    [1,2],
+    [0,2]
 ]
 
 di,dj = (-1,1,0,0), (0,0,-1,1)

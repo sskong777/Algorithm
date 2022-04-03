@@ -24,7 +24,7 @@ T = 10
 for tc in range(1,T+1):
     N,S = map(int,input().split())
     lst = list(map(int,input().split()))
-    # lst 연결값을 인접행렬에 저장
+    # lst 연결값을 인접행렬에 저장 (유향그래프)
     adj = [[0]*101 for _ in range(101)]
     for i in range(0,len(lst),2):
         adj[lst[i]][lst[i+1]] = 1

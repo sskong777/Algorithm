@@ -3,15 +3,15 @@ sys.stdin = open('input.txt', 'r')
 
 def dfs(n,ssum):
     global ans
+    # 1년을 넘어가면 중단
     if n > 12:
+        # 정답 갱신
         if ans > ssum:
             ans = ssum
         return
     dfs(n+1,ssum+arr[n]*day)
     dfs(n+1,ssum + month)
-    # if n >= 3:
     dfs(n+3,ssum+month_3)
-    # if n >= 12:
     dfs(n+12,ssum+year)
 
 

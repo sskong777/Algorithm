@@ -2,7 +2,6 @@ import sys
 sys.stdin = open('input.txt', 'r')
 
 def dfs(N,si,sj,num):
-
     if N >= 7:
         sset.add(num)
         return

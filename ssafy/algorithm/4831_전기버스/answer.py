@@ -7,6 +7,7 @@ for tc in range(1, T+1):
     chargers = list(map(int, input().split()))  # 충전소
     stations = [True if n in chargers else False for n in range(N + 1)] # 충전기가 있으면 T, 아니면 F (정류장이 0번부터 시작하니 N+1)
 
+    # print(stations)
     charge_count = last_charge = 0 # 총 충전 횟수 / 마지막 충전한 위치 인덱스 초기화
     current = K                    # 시작과 동시에 현 위치 갱신 -> 최대로 일단 갈 수 있을 만큼 가자
 

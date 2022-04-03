@@ -1,3 +1,5 @@
+# 실패 코드
+
 N = int(input())
 arr = []
 for n in range(N):
@@ -18,3 +20,15 @@ arr2.append(arr[-1])
 
 # print(arr2)
 # [[2, 4], [4, 6], [8, 10], [15, 8]]
+for i in range(len(arr2)-1):
+    if arr2[i][1] > arr2[i+1][1]:
+        arr2.append([arr2[i][0]+1,arr2[i+1][1]])
+arr2.sort()
+arr2.append([arr2[-1][0]+1, arr2[-1][1]])
+# print(arr2)
+
+# [[2, 4], [4, 6], [8, 10], [9, 8], [15, 8]]
+area = 0
+for i in range(len(arr2)-1):
+    area += (arr2[i+1][0]-arr2[i][0]) * arr2[i][1]
+print(area)

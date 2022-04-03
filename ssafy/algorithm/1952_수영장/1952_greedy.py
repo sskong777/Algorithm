@@ -15,5 +15,6 @@ for tc in range(1,T+1):
             mmin = min(mmin,D[i-3] + month_3)
         if i>=12:
             mmin = min(mmin,D[i-12] + year)
+        # i월까지의 누적 최소값!
         D[i] = mmin
     print(f'#{tc} {D[12]}')
