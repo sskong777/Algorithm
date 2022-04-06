@@ -11,3 +11,4 @@ for i in scare:
         result += 1 # 그룹결성
         count = 0   # 및 모험가 수 초기화
 
+print(result)
