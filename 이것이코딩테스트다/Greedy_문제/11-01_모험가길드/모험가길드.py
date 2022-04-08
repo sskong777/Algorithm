@@ -1,4 +1,4 @@
-n  = int(input())
+n = int(input())
 scare = list(map(int,input().split()))
 
 scare.sort(reverse=False)   # 공포도 오름차순으로
