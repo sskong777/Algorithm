@@ -15,5 +15,4 @@ for tc in range(1,T+1):
             else:
                 count_one += 1
 
-
     print(min(count_zero, count_one))
