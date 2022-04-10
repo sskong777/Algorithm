@@ -12,5 +12,4 @@ for i in arr:
         break
     minV += i
 
-
 print(minV)
