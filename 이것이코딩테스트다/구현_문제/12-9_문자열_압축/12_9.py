@@ -3,7 +3,7 @@ sys.stdin = open('input.txt')
 
 T = int(input())
 for tc in range(T):
-    s = list(input())
+    s = input()
     ans = 10000
     # n개로 압축
     for n in range(1,len(s)//2+2):  # n은 1부터 S의 길이 //2일 때 까지 (+2를 해준이유는 s의 길이가 1일때고려)
@@ -21,9 +21,9 @@ for tc in range(T):
                     res += temp
                 # res에 반복횟수와 반복된 문자열을 더해준다.
                 else:
-                    res += str(cnt)+temp
+                    res += str(cnt)+ temp
                 # 다음 반복문을 위해 temp(비교당할 문자열)을 초기화시켜준다.
-                tmp = s[i:i+n]
+                temp = s[i:i+n]
                 # 반복횟수도 1로 초기화
                 cnt = 1
         ans = min(ans,len(res))
