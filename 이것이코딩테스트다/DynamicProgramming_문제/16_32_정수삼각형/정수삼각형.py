@@ -9,11 +9,11 @@ N = int(input())
 arr = []
 for i in range(N):
     arr.append([0] + list(map(int,input().split())))
+# print(arr)
 
 for i in range(1,N):
-    for j in range(i+1):
+    for j in range(1,i+1):
         arr[i][j] = arr[i][j] + max(arr[i-1][j-1],arr[i-1][j])
-for i in range(N):
-    arr[i][0] = 0
+
 # print(arr)
 print(max(arr[N-1]))

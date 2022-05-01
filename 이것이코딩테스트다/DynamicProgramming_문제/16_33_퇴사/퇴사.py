@@ -17,7 +17,7 @@ print(P)
 
 for i in range(N):
     # i일에 상담을 잡을 수 있다면
-    if T[i]+i <= N+1:
+    if T[i]+i <= N:
         t = 0
         while t <= N:
             dp[i] += P[t]
