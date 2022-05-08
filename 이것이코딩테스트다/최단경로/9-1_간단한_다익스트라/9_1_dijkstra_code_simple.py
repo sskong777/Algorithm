@@ -48,7 +48,7 @@ def dijkstra(start):
         # print(distance)
 
 dijkstra(start)
-# print(distance)
+print(distance)
 
 
 # 모든 노드로 가기 위한 최단 거리를 출력
