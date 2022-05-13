@@ -38,7 +38,7 @@ for d, s, e in edge:
         if count == V:
             break
 
-
+print(P)
 
 
 
