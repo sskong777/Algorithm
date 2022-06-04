@@ -10,8 +10,6 @@ def bam_turn(x,c):
         x = (x+1) % 4 # 상 우 하 좌
     return x
 
-
-
 def start():
     direction = 1
     time = 1
