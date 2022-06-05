@@ -11,9 +11,9 @@ def bam_turn(x,c):
     return x
 
 def start():
-    direction = 1
-    time = 1
-    y,x = 0,0
+    direction = 0
+    time = 0
+    y,x = 1,1
     visited = deque([[y,x]])
     arr[y][x] = 2
     while True:
@@ -31,9 +31,9 @@ def start():
             return time
 
 
-# 상 우 하 좌
-dx = [-1,0,1,0]
-dy = [0,1,0,-1]
+#  우 하 좌 상
+dx = [0,1,0,-1]
+dy = [1,0,-1,0]
 
 N = int(input())
 K = int(input())
@@ -46,9 +46,9 @@ for k in range(K):
 
 
 L = int(input())
-turn = {}
+turn = []
 for l in range(L):
     x,c = input().split()
-    turn[int(x)] = c
+    turn.append((int(x),c))
 
 print(start())
