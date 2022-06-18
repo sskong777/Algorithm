@@ -18,3 +18,4 @@ def union_parent(parent,a,b):
 
 N = int(input())
 
+
