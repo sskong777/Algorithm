@@ -9,8 +9,8 @@ for tc in range(1,T+1):
     # 월 별 누적된 값을 넣어줄 배열
     D = [0] * 13
     for i in range(1,13):
-        mmin = D[i-1] + (arr[i]*day)
-        mmin = min(mmin, D[i-1] + month)
+        mmin = D[i-1] + (arr[i]*day)             #하루요금
+        mmin = min(mmin, D[i-1] + month)        # 월 요금
         if i>=3:
             mmin = min(mmin,D[i-3] + month_3)
         if i>=12:

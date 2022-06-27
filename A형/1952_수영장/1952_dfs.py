@@ -14,7 +14,6 @@ def dfs(n,ssum):
     dfs(n+3,ssum+month_3)
     dfs(n+12,ssum+year)
 
-
 T = int(input())
 for tc in range(1,T+1):
     day, month, month_3,year = map(int,input().split())
