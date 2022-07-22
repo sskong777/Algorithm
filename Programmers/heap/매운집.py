@@ -1,3 +1,5 @@
+# https://school.programmers.co.kr/learn/courses/30/lessons/42626
+
 from heapq import *
 def solution(scoville, K):
     count = 0
