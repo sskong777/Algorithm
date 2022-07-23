@@ -2,14 +2,18 @@ import sys
 sys.stdin = open('input.txt')
 
 N,M = map(int,input().split())
-S = []
-check = []
+S = set()
+# check = []
+count = 0
 for n in range(N):
-    S.append(input())
+    S.add(input())
 
 for m in range(M):
-    check.append(input())
+    str_m = input()
+    if str_m in S:
+        count += 1
 
-print(S)
-print('=--====')
-print(check)
+print(count)
+# print(S)
+# print('=--====')
+# print(check)
