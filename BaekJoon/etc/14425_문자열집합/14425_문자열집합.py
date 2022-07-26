@@ -14,6 +14,3 @@ for m in range(M):
         count += 1
 
 print(count)
-# print(S)
-# print('=--====')
-# print(check)
