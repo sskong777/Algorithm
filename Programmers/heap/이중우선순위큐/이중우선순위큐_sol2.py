@@ -4,7 +4,6 @@
 def solution(operations):
     answer = []
 
-
     for i in operations:
         a, b = i.split()
         if a == 'I':
