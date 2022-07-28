@@ -20,3 +20,7 @@ def dfs(index, numbers, target, ssum):
 
     dfs(index + 1, numbers, target, ssum + numbers[index])
     dfs(index + 1, numbers, target, ssum - numbers[index])
+
+#   numbers       	target	return
+# [1, 1, 1, 1, 1]	    3	    5
+# [4, 1, 2, 1]	4	    2
