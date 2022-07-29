@@ -11,10 +11,12 @@ def solution(numbers, target):
 
 def dfs(index, numbers, target, ssum):
     global answer
+    # 조건 만족 & 종료조건
     if index == len(numbers) and ssum == target:
         answer += 1
         return
 
+    # 종료조건
     if index == len(numbers):
         return
 
