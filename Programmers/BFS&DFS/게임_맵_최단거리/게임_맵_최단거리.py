@@ -15,6 +15,7 @@ def bfs(si, sj, N, M, maps):
 
     while q:
         ci, cj = q.pop(0)
+        # 종료조건
         if ci == N - 1 and cj == M - 1:
             return visited[N - 1][M - 1]
 
@@ -22,6 +23,7 @@ def bfs(si, sj, N, M, maps):
             ni, nj = ci + di, cj + dj
             if 0 <= ni < N and 0 <= nj < M and visited[ni][nj] == 0 and maps[ni][nj] == 1:
                 q.append((ni, nj))
+                # 거리를 구하기 위해서 +1
                 visited[ni][nj] = visited[ci][cj] + 1
 
     return -1
