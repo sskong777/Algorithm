@@ -28,6 +28,7 @@ for si in range(N):
             apt = dfs(si,sj)
             cnt += 1
             apts.append(len(apt))
+            
 apts.sort()
 print(cnt)
 for apt in apts:
