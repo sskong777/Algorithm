@@ -1,5 +1,5 @@
 # 조건1. x >= y
-# 조건2.(x-2) * (y-2) = yellow
+# 조건2. (x-2) * (y-2) = yellow
 # 조건3. 2*x + 2*y -4 = brown
 
 def solution(brown, yellow):
