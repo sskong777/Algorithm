@@ -1,4 +1,5 @@
 # n까지 소수의 갯수 구하기
+
 # 에라스토테네스의 체
 def isPrime(n):
     sieve = [True] * n
