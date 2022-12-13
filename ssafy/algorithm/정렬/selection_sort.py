@@ -18,7 +18,7 @@ def selection_sort(nums):
     for i in range(len(nums) - 1):
         # 최솟값에 해당하는 index를 i부터 시작 (0번 위치가 기준위치가 된다.)
         min_idx = i
-        # i 다음부터 보자 (i부터하면 한번 더 보게된다.)
+        # i 다음부터 보자 (i부터 하면 한번 더 보게된다.)
         for j in range(i + 1, len(nums)):
             # 내가 가진 최솟값(min_idx)보다 더 작다?
             # 큰걸 뒤로 보낸다는 느낌으로!

@@ -13,7 +13,7 @@ for tc in range(1,T+1):
 
     N = int(input())
     prime_list = prime(N)
-    # print(prime_list)
+    print(prime_list)
     partition = []
     for i in prime_list:
         for j in prime_list:
