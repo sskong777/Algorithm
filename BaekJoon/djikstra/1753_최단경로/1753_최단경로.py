@@ -45,3 +45,5 @@ for i in range(1, N + 1):
         print("INF")
     else:
         print(distance[i])
+
+
