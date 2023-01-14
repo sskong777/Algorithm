@@ -6,9 +6,9 @@ arr = [list(map(int,input().split())) for _ in range(N)]
 # print(arr)
 for i in arr:
     i.sort()
-mmin = 100
-print(min(arr[0]))
+mmax = 0
+
 for i in arr:
-    if mmin > i[0]:
-        mmin = i[0]
-print(mmin)
+    if mmax < i[0]:
+        mmax = i[0]
+print(mmax)
