@@ -1,7 +1,7 @@
 import sys
 sys.stdin = open('input.txt', 'r')
 
-#  우 하 좌 상
+#  우 하 좌 상g
 dx = [0,1,0,-1]
 dy = [1,0,-1,0]
 
