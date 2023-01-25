@@ -1,6 +1,8 @@
 import sys
 sys.stdin = open('input.txt', 'r')
 
+# 조합 combination 사용
+# 시작점 여러개 bfs
 from itertools import combinations
 from collections import deque
 def bfs(virus):

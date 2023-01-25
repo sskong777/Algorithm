@@ -2,6 +2,9 @@ import sys
 from collections import deque
 sys.stdin = open('input.txt', 'r')
 
+# 3중 for문 사용
+# 2중 for문 시작점 여러개인 bfs
+
 def bfs(start):
     global N,M
     q = deque([start])
