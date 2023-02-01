@@ -15,8 +15,8 @@ def solution(N, stages):
         arr.append((i,fail))
         users -= count
 
-        answer = sorted(arr, key=lambda x:-x[1])
-        answer = [i[0] for i in answer]
+    answer = sorted(arr, key=lambda x:-x[1])
+    answer = [i[0] for i in answer]
     return answer
 
 N = int(input())
