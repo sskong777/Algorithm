@@ -31,10 +31,10 @@ for k in range(1,N+1):
         for b in range(1,N+1):
             graph[a][b] = min(graph[a][b], graph[a][k] + graph[k][b])
 
-distance = graph[1][k] + graph[K][X]
+distance = graph[1][K] + graph[K][X]
 
 if distance >= INF:
-    print('-1')
+    print("-1")
 else:
     print(distance)
 
