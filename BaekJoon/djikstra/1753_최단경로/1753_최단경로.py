@@ -1,19 +1,21 @@
 import sys
 sys.stdin = open('input.txt', 'r')
 
+
 import heapq
 
-V, E = map(int,input().split())
+
+N, M = map(int, input().split())
 start = int(input())
 
 INF = int(1e9)
-graph = [[]  for _ in range(V+1)]
-distance = [INF] * (V+1)
+graph = [[] for _ in range(N + 1)]
+distance = [INF] * (N + 1)
 
 
-for m in range(V):
-    begin, end, cost = map(int,input().split())
-    graph[begin].append((end,cost))
+for m in range(M):
+    begin, end, cost1 = map(int,input().split())
+    graph[begin].append((end,cost1))
 
 def dijkstra(start):
     q = []
@@ -38,9 +40,8 @@ def dijkstra(start):
 
 dijkstra(start)
 
-# print(distance)
-for i in range(1,V+1):
-    if distance[i] ==INF:
+for i in range(1, N + 1):
+    if distance[i] == INF:
         print("INF")
     else:
         print(distance[i])
