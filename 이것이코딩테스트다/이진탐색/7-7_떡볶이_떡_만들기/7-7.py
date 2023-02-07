@@ -14,7 +14,6 @@ def binary_search(arr,target,start,end):
                 ssum += i-mid
 
         if ssum > target:
-            # res = mid
             start = mid + 1
         elif ssum < target:
             end = mid - 1

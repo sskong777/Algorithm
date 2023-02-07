@@ -18,6 +18,7 @@ def binary_search(arr,target,start,end):
             end = mid -1
 
     return end
+
 N,target = map(int,sys.stdin.readline().rstrip().split())
 arr = list(map(int,sys.stdin.readline().rstrip().split()))
 

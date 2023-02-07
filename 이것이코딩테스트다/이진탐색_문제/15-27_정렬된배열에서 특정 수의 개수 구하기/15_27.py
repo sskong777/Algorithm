@@ -8,7 +8,7 @@ def binary_search(array,target,start,end):
     # 타켓을 찾았으면 타겟에 해당하는 인덱스를 제거한 후 다시 이진탐색을 돌린다.
     if array[mid] == target:
         cnt += 1
-        array.pop(mid)
+        array.pop(mid)  # 타겟에 해당하는 인덱스 제거
         return binary_search(array,target,0,len(array)-1)
 
 
