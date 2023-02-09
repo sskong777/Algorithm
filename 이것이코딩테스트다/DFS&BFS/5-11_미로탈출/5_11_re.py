@@ -8,8 +8,7 @@ def bfs(si,sj):
 
     while q:
         ci,cj = q.pop(0)
-        # if ci==N-1 and cj==M-1:
-        #     return visited[ci][cj]
+
         for di,dj in ((-1,0),(1,0),(0,1),(0,-1)):
             ni,nj = ci+di, cj+dj
             if 0<=ni<N and 0<=nj<M and arr[ni][nj] == 1 and not visited[ni][nj]:

@@ -1,3 +1,6 @@
+# 점화식
+# Ai = min(Ai-1, Ai/2, Ai/3, Ai/5) + 1
+
 d = [0] * 30001
 
 n = int(input())
