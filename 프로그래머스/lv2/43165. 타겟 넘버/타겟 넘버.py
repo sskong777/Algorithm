@@ -1,4 +1,3 @@
-answer = 0
 
 def solution(numbers, target):
     global answer
