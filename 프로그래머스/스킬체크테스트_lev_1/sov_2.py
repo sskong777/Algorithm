@@ -12,8 +12,13 @@ def solution(new_id):
     # 1 step
     id_1 = new_id.lower()
 
+
+    # 2 step
+
     answer = ''
     return answer
+
+
 
 
 
