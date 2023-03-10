@@ -14,15 +14,5 @@ def solution(new_id):
 
 
     # 2 step
-
     answer = ''
     return answer
-
-
-
-
-
-
-
-
-
