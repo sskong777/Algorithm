@@ -1,6 +1,4 @@
 def solution(A, B):
-    answer = 0
-
     ans1 = 0
     Asort1 = sorted(A)
     Bsort1 = sorted(B, reverse=True)
