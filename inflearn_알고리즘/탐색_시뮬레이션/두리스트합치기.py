@@ -1,0 +1,6 @@
+N = int(input())
+arr01 = list(map(int,input().split()))
+M = int(input())
+arr02 = list(map(int,input().split()))
+answer = sorted(arr01 + arr02)
+print(*answer)
