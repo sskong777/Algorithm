@@ -5,7 +5,7 @@ dp = [0] * (n+1)
 dp[1] = 1
 res = 0
 for i in range(2,n+1):
-    max = 0
+    max = 00
     for j in range(i-1,0,-1):
         if arr[i] > arr[j] and dp[j] > max:
             max = dp[j]
