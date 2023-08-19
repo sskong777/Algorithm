@@ -15,3 +15,4 @@ answer = 0
 for i in range(10):
     answer = (answer + dp[N][i]) % 1000000000
 print(answer)
+
