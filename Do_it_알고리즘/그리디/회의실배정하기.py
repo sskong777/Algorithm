@@ -3,7 +3,7 @@ arr = []
 for _ in range(n):
     start,end = map(int,input().split())
     arr.append((start,end))
-arr.sort(key=lambda x:(x[1],x[0]))
+arr.sort(key=lambda x:(x[1],x[0]))  # 종료시간이 같으면 시작시간이 빠른 순으로 정렬
 
 print(arr)
 answer = 0
