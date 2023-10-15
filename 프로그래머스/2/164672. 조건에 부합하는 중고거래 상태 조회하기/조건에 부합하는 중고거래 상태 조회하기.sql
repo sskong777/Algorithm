@@ -1,0 +1,15 @@
+select 
+    BOARD_ID,
+    WRITER_ID,
+    TITLE,
+    PRICE,
+    CASE
+        WHEN STATUS = 'DONE' THEN '거래완료'
+        WHEN STATUS = 'SALE' THEN '판매중'
+        ELSE '예약중'
+    END
+FROM
+    USED_GOODS_BOARD
+WHERE
+    TO_CHAR(CREATED_DATE,'YYYY-MM-DD') = '2022-10-05'
+ORDER BY BOARD_ID DESC;
