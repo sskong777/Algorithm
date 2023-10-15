@@ -1,13 +1,12 @@
--- 코드를 입력하세요
-SELECT DISTINCT
-    C.CAR_ID
-FROM
+select
+    DISTINCT(C.CAR_ID)
+from   
     CAR_RENTAL_COMPANY_CAR C
 JOIN
     CAR_RENTAL_COMPANY_RENTAL_HISTORY H ON C.CAR_ID = H.CAR_ID
-WHERE 
+WHERE
     C.CAR_TYPE = '세단'
-AND
+    and
     TO_CHAR(H.START_DATE,'YYYY-MM') = '2022-10'
-ORDER BY
-    CAR_ID DESC;
+order by
+    1 desc;
